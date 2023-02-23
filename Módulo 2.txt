@@ -1,0 +1,136 @@
+Representação por nomes
+<h2 style="background-color: blue; color: white;">
+
+Representação por códigos Hexadecimais
+
+* Decimal: 0 1 2 3 4 5 6 7 8 9
+
+* Hexacimal: 0 1 2 3 4 5 6 7 8 9 A B C D E
+<h2 style="background-color:#0000ff; color:#ffffff;">
+
+
+Representação em RGB (Red, Green, Blue)
+<h2 style="background-color: rgb(65, 65, 159); color: rgb(255, 0, 0);">
+
+
+Representação por HSL (Hue, Saturation, Luminosity) = (matiz, saturação, luminosidade)
+<h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">
+
+
+Harmonia das cores
+
+Cores primárias: Amarelo, vermelho e azul (fazem um triângulo perfeito na roda das cores)
+
+Cores secundárias: Laranja, verde e violeta
+
+Cores terciárias: amarelo-alaranjado, vermelho-alaranjado, vermelho-arroxeado, azul-arroxeado, azul esverdeado
+
+Cores frias: Violeta, azul, azul-arroxeado, verde, amarelo-esverdeado, azul-esverdeado
+
+Cores quentes: Vermelho-arroxeado, vermelho, vermelho-alaranjado, laranja, amarelo, amarelo-alaranjado
+
+
+Cores complementares: Cores que combinam os contrastes
+
+Cores análogas: Cores que não tem contraste mas tem harmonia (um degradê de três cores) 
+
+Cores análogas e complementares: mistura com cores de harmonia e com contrastes
+
+Cores análogas relacionadas: Usar duas cores análogas e pular uma cor para criar um contraste
+
+Cores intercaladas: Pula um cor na roda das cores
+
+Cores triádicas: Gera um triângulo pulando três cores na roda das cores
+
+Cores em quadrados: Em vez de pular três cores como nas "cores triádicas", pula apenas duas
+
+Cores tetrádicas: cruzar duas cores complementares e fazer como um quadrado de cores
+
+Monocromia: Usar uma cor e alterar a luminosidade e saturação para formar uma paleta de cores
+
+
+Sites recomendados de paleta de cores: Adobe Color, Paletton, Coolors
+Para capturar as cores da tela: ColorZilla
+
+
+
+Criando gradiente:
+<style>
+        * { /*Configurações globais das CSS */
+            height: 100%;
+        }
+        body {
+           background-image: linear-gradient(to top, #3198E2 , #6059C0, #B93590, #E33F5F, #FFD579);
+           background-attachment: fixed;
+        }
+    </style>
+    
+    
+
+Configurações das fontes:
+
+font-family: 'Work sans', Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        
+        Medidas absolutas: cm,mm,in,px,pt,pc
+        ( centímetro,milímetro,polegada,pixel,ponto, paica )
+
+        Medidas relativas: em, ex, rem, Vw, Vh, % 
+
+        Recomendadas: px, em
+        
+
+        Tipo das fontes: lighter, normal, bold, bolder 
+    }
+
+    h1 {
+        shorthand font
+        -font: style -> font-weight -> font-size -> font-family
+        
+        font: italic bolder 3em 'Work sans', sans-serif;   
+        
+        
+Para modificar as fontes se usa o Google Fonts e ir em @import (sempre lembrar que não pode estar dentro de um seletor e sim dentro de <style> na primeira linha)
+
+Além de Google Fonts, pode-se usar o DaFonts e baixar fontes
+para usar no CSS tem que usar uma regra
+
+@font-face {
+            font-family: 'Bundaria';
+            src: url('Bundaria.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+            
+Os formatos podem ser:
+Tipos de format ()
+            opentype (otf)
+            truetype (ttf)
+            embedded-opentype
+            truetype-aat (Apple Advanced Typography)
+            svg
+            
+            
+Sites para encontrar fontes em fotos: https://www.whatfontis.com/?s3
+                                      https://www.myfonts.com/pages/whatthefont
+                                      https://www.fontsquirrel.com/   
+                                      
+                                      
+
+ seletores de id (#) e de class (.)
+ Um id vai identificar um elemento único dentro da página atual. Essa identificação vai nos permitir criar um estilo especial para um elemento isolado. Já um class vai identificar uma classe à qual um ou mais elementos pertençam, compartilhando características em comum a todos os que façam parte desse grupo.                                                                 
+ 
+ 
+ ( Em um mesmo documento HTML, só podemos usar um id para um único elemento, o que significa que não podemos ter dois elementos com um mesmo id dentro de uma mesma página. Porém, podemos atribuir um mesmo class para vários elementos que possuam essa mesma característica.)
+ 
+ 
+ Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor após um sinal de dois pontos e especificam um estado especial de um elemento. Existem várias pseudo-classes para estilos, podemos citar :hover, :visited, :active, :checked, :empty e :focus.
+
+Já um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um seletor após dois sinais de dois pontos e permitem que você formate um pedaço específico do elemento referenciado. Os principais pseudo-elementos usados nas CSS são ::before, ::after, ::first-letter, ::first-line.
+
+<div>
+Resumo
+
+O elemento de divisão **HTML <div> **é um container genérico para conteúdo de fluxo, que de certa forma não representa nada. Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id), ou porque eles compartilham valores de atributos, como lang. Ele deve ser utilizado somente quando não tiver outro elemento de semântica (tal como <article> ou <nav>).
+
+
+(user agent- é o navegador que eu estou usando para mostrar o conteúdo)
